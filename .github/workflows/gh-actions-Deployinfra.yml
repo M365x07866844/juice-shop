@@ -15,26 +15,12 @@ jobs:
     name: Deploy Development Infrastructure
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Azure CLI Login
-      uses: azure/login@v2
-      with:
-        client-id: '1ad1e1fb-0ceb-4f75-a72a-a7631c459d95'
-        tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
-        subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'
-  
-    - name: Azure CLI script
-      uses: azure/cli@v2
-      with:
-        azcliversion: latest
-        inlineScript: |
-          az account show
-          # You can write your Azure CLI inline scripts here.
+    - uses: actions/checkout@v2    
     - # "Note: the 'AZURE_CLIENT_ID' and 'AZURE_TENANT_ID' secret is required to be added into GitHub Secrets. See this blog post for details: https://samlearnsazure.blog/2019/12/13/github-actions/"
       name: Azure Login
       uses: azure/login@v2
       with:
-        client-id: '1ad1e1fb-0ceb-4f75-a72a-a7631c459d95'
+        client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
         tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
         subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'        
         allow-no-subscriptions: true
