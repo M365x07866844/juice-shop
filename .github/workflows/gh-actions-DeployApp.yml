@@ -20,9 +20,9 @@ jobs:
       name: Azure Login
       uses: azure/login@v2
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
+        tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
+        subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'
 
     - run: az acr login --name acrdevsecops${{ secrets.LABINSTANCEID }}
 
@@ -41,9 +41,9 @@ jobs:
       name: Azure Login
       uses: azure/login@v2
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
+        tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
+        subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'
     
     - uses: azure/appservice-settings@v1
       with:
@@ -65,9 +65,9 @@ jobs:
       name: Azure Login
       uses: azure/login@v2
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
+        tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
+        subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'
 
     
     - uses: azure/appservice-settings@v1
