@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 'Az CLI login'
-      uses: azure/login@a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+      uses: azure/login@v2
       with:
         client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
         tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
