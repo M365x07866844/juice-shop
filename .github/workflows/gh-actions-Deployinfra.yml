@@ -15,6 +15,17 @@ jobs:
     name: Deploy Development Infrastructure
     runs-on: ubuntu-latest
     steps:
+    - name: 'Az CLI login'
+      uses: azure/login@a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+      with:
+        client-id: '6990f9a9-0d5e-4103-9dee-2e08089289de'
+        tenant-id: '4cfe372a-37a4-44f8-91b2-5faf34253c62'
+        subscription-id: '6058562a-0881-4a32-b328-6c0a5d91bf5e'
+
+    - name: 'Run az commands'
+      run: |
+        az account show
+        az group list
     - uses: actions/checkout@v2    
     - # "Note: the 'AZURE_CLIENT_ID' and 'AZURE_TENANT_ID' secret is required to be added into GitHub Secrets. See this blog post for details: https://samlearnsazure.blog/2019/12/13/github-actions/"
       name: Azure Login
